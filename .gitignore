@@ -1,2 +1,3 @@
-Argentina
 .idea
+__pycache__
+*.pdf
