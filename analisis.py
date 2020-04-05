@@ -1,5 +1,5 @@
 from scipy.optimize import curve_fit
-from datos import *
+from datos_individuales import *
 
 
 # %% Ajustes
@@ -28,11 +28,17 @@ if pais == "Argentina":
 elif pais == "Paraguay":
     param_lin, err_lin = curve_fit(lineal, dias, np.log(infectados))
     param_log, err_log = curve_fit(logistica, dias, infectados, p0=[200, 1, 28])
+elif pais == "Brasil":
+    param_lin, err_lin = curve_fit(lineal, dias[20:], np.log(infectados[20:]))
+    param_log, err_log = [0, 0, 0], 0
+elif pais == "Chile":
+    param_lin, err_lin = curve_fit(lineal, dias[10:], np.log(infectados[10:]))
+    param_log, err_log = [0, 0, 0], 0
+
 param_lin_muertos, err_lin_muertos = curve_fit(lineal, dias[primer_muerto:], np.log(muertos[primer_muerto:]))
 
-# Este es el error caudratico medio de los ajustes.
-mse_lin = np.mean(lineal(dias[:dia_de_cuarentena], param_lin[0], param_lin[1]) -
-                  np.log(infectados[:dia_de_cuarentena]) ** 2)
+# Calculamos el error cuadratico medio para cada ajuste.
+mse_lin = np.mean(lineal(dias, param_lin[0], param_lin[1]) - np.log(infectados) ** 2)
 mse_log = np.mean((logistica(dias, param_log[0], param_log[1], param_log[2]) - infectados) ** 2)
 mse_lin_muertos = np.mean(lineal(dias[primer_muerto:], param_lin_muertos[0], param_lin_muertos[1]) -
                           np.log(infectados[primer_muerto:]) ** 2)
