@@ -18,6 +18,6 @@ Los datos los saqué de la página oficial del [Ministerio de Salud](https://cov
 
 ### Chile
 
-Los datos los saqué de la página oficial del [Ministerio de Salud](https://www.minsal.cl/nuevo-coronavirus-2019-ncov/casos-confirmados-en-chile-covid-19/) y del [artículo de Wikipedia](https://es.wikipedia.org/wiki/Pandemia_de_enfermedad_por_coronavirus_de_2020_en_Chile#cite_note-5). Algunas ciudades están en cuarentena y otras no.
+Los datos los saqué de la página oficial del [Ministerio de Salud](https://www.minsal.cl/nuevo-coronavirus-2019-ncov/casos-confirmados-en-chile-covid-19/) y del [artículo de Wikipedia](https://es.wikipedia.org/wiki/Pandemia_de_enfermedad_por_coronavirus_de_2020_en_Chile). Algunas ciudades están en cuarentena y otras no.
 
-###### Actualizado: 04/04/2020
+###### Actualizado: 06/04/2020

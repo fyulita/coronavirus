@@ -73,27 +73,14 @@ def graficar_muertos():
     plt.show()
 
 
-def graficar_infectados_log():
-    plt.figure("Casos Confirmados de COVID-19 en Sudamerica (Escala Log)")
-    plt.title("Casos Confirmados de COVID-19 en Sudamérica (Escala Log)")
-    for i in range(0, np.shape(infectados)[0]):
-        plt.semilogy(dias, infectados[i], "o", label="{}".format(paises[i]))
-    plt.grid()
-    plt.legend()
-    plt.xlabel("Días desde el 26/02/2020")
-    plt.ylabel("Casos Confirmados")
-    plt.savefig("Sudamerica/Casos-Confirmados-de-COVID-19-en-Sudamerica-Log.png")
-    plt.show()
-
-
-def graficar_trayectoria():
-    plt.figure("Trayectoria de Casos Confirmados de COVID-19 en Sudamerica (Estatico)")
-    plt.title("Trayectoria de Casos Confirmados de COVID-19 en Sudamérica")
+def graficar_trayectorias():
+    plt.figure("Trayectorias de Casos Confirmados de COVID-19 en Sudamerica (Estatico)")
+    plt.title("Trayectorias de Casos Confirmados de COVID-19 en Sudamérica")
     for i in range(0, np.shape(infectados)[0]):
         plt.loglog(infectados[i], infectados_nuevos_semanales[i], "-o", label="{}".format(paises[i]))
     plt.grid()
     plt.legend()
     plt.xlabel("Casos Confirmados")
     plt.ylabel("Casos Nuevos Confirmados en los Últimos 7 días")
-    plt.savefig("Sudamerica/Trayectoria-de-Casos-Confirmados-de-COVID-19-en-Sudamerica.png")
+    plt.savefig("Sudamerica/Trayectorias-de-Casos-Confirmados-de-COVID-19-en-Sudamerica.png")
     plt.show()

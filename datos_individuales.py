@@ -16,12 +16,12 @@ if pais == "Argentina":
 elif pais == "Paraguay":
     primer_dia = "07/03/2020"
     dia_de_cuarentena = 3
-    muertos = datos[1:, 2]
     recuperados = datos[1:, 3]
 elif pais == "Brasil":
     primer_dia = "26/02/2020"
 elif pais == "Chile":
     primer_dia = "03/03/2020"
+    recuperados = datos[1:, 3]
 
 i = 0
 while i < len(muertos) and muertos[i] == 0:
