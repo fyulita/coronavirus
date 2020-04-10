@@ -1,7 +1,7 @@
 import numpy as np
 
 
-pais = "Chile"
+pais = "Argentina"
 datos = np.genfromtxt("{}/Datos.csv".format(pais), delimiter=",")
 
 infectados = datos[1:, 1]
