@@ -21,6 +21,12 @@ paises = ["Argentina", "Paraguay", "Brasil", "Chile"]
 
 dias = np.arange(len(infectados_arg))
 
+poblacion_arg = 44560000
+poblacion_py = 7053000
+poblacion_br = 209469333
+poblacion_ch = 18882332
+poblaciones = [poblacion_arg, poblacion_py, poblacion_br, poblacion_ch]
+
 
 #%% Analisis
 
@@ -83,4 +89,17 @@ def graficar_trayectorias():
     plt.xlabel("Casos Confirmados")
     plt.ylabel("Casos Nuevos Confirmados en los Últimos 7 días")
     plt.savefig("Sudamerica/Trayectorias-de-Casos-Confirmados-de-COVID-19-en-Sudamerica.png")
+    plt.show()
+
+
+def graficar_infectados_percapita():
+    plt.figure("Casos Confirmados de COVID-19 en Sudamerica per Capita")
+    plt.title("Casos Confirmados de COVID-19 en Sudamérica per Cápita")
+    for i in range(0, np.shape(infectados)[0]):
+        plt.plot(dias, infectados[i] / poblaciones[i] * (10 ** 4), "o", label="{}".format(paises[i]))
+    plt.grid()
+    plt.legend()
+    plt.xlabel("Días desde el 26/02/2020")
+    plt.ylabel(r"Casos Confirmados per Cápita $\times 10^{-4}$")
+    plt.savefig("Sudamerica/Casos-Confirmados-de-COVID-19-en-Sudamerica-per-Capita.png")
     plt.show()

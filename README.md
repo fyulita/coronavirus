@@ -10,7 +10,7 @@ Los datos los saqué de la página oficial del [Ministerio de Salud](https://www
 
 ### Paraguay
 
-Los datos los saqué de la página oficial del [Ministerio de Salud](https://www.mspbs.gov.py/reportes-covid19.html). La cuarentena nacional obligatoria empezó el 10/03/2020 y el 20/03/2020 la extendieron al 12/03/2020.
+Los datos los saqué de la página oficial del [Ministerio de Salud](https://www.mspbs.gov.py/reportes-covid19.html). La cuarentena nacional obligatoria empezó el 10/03/2020 y el 20/03/2020 la extendieron al 12/04/2020.
 
 ### Brasil
 
@@ -20,4 +20,4 @@ Los datos los saqué de la página oficial del [Ministerio de Salud](https://cov
 
 Los datos los saqué de la página oficial del [Ministerio de Salud](https://www.minsal.cl/nuevo-coronavirus-2019-ncov/casos-confirmados-en-chile-covid-19/) y del [artículo de Wikipedia](https://es.wikipedia.org/wiki/Pandemia_de_enfermedad_por_coronavirus_de_2020_en_Chile). Algunas ciudades están en cuarentena y otras no.
 
-###### Actualizado: 06/04/2020
+###### Actualizado: 10/04/2020
